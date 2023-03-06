@@ -7091,6 +7091,19 @@
                         "totalp": 10.0
                     },
                     "15": {
+                        "absent": "n/e",
+                        "category": "Progress Assessments",
+                        "ddaate": "2023-03-06",
+                        "exempt": "n/e",
+                        "ingrade": true,
+                        "late": "n/e",
+                        "missing": "n/e",
+                        "modified": "n/e",
+                        "name": "Food Project",
+                        "score": "n/e",
+                        "totalp": 35.0
+                    },
+                    "16": {
                         "absent": false,
                         "category": "Classwork,Homework",
                         "ddaate": "2023-01-23",
@@ -7103,20 +7116,20 @@
                         "score": 10.0,
                         "totalp": 10.0
                     },
-                    "16": {
-                        "absent": "n/e",
+                    "17": {
+                        "absent": false,
                         "category": "Classwork,Homework",
                         "ddaate": "2023-03-03",
-                        "exempt": "n/e",
+                        "exempt": false,
                         "ingrade": true,
-                        "late": "n/e",
-                        "missing": "n/e",
-                        "modified": "n/e",
+                        "late": false,
+                        "missing": false,
+                        "modified": "2023-03-06 08:06:17",
                         "name": "Ch. 14 study notes pgs 5-9, 14.3",
-                        "score": "n/e",
+                        "score": 9.0,
                         "totalp": 10.0
                     },
-                    "17": {
+                    "18": {
                         "absent": false,
                         "category": "Classwork,Homework",
                         "ddaate": "2023-02-06",
@@ -7129,7 +7142,7 @@
                         "score": 10.0,
                         "totalp": 10.0
                     },
-                    "18": {
+                    "19": {
                         "absent": false,
                         "category": "Classwork,Homework",
                         "ddaate": "2023-02-08",
@@ -7141,19 +7154,6 @@
                         "name": "Ch. 12 pages 5-8, 12.3 and 12.4",
                         "score": 10.0,
                         "totalp": 10.0
-                    },
-                    "19": {
-                        "absent": false,
-                        "category": "Classwork,Homework",
-                        "ddaate": "2023-01-06",
-                        "exempt": false,
-                        "ingrade": false,
-                        "late": false,
-                        "missing": false,
-                        "modified": "2023-01-09 08:20:06",
-                        "name": "Homework Passes",
-                        "score": 3.0,
-                        "totalp": 3.0
                     },
                     "2": {
                         "absent": false,
@@ -7169,6 +7169,19 @@
                         "totalp": 10.0
                     },
                     "20": {
+                        "absent": false,
+                        "category": "Classwork,Homework",
+                        "ddaate": "2023-01-06",
+                        "exempt": false,
+                        "ingrade": false,
+                        "late": false,
+                        "missing": false,
+                        "modified": "2023-01-09 08:20:06",
+                        "name": "Homework Passes",
+                        "score": 3.0,
+                        "totalp": 3.0
+                    },
+                    "21": {
                         "absent": false,
                         "category": "Classwork,Homework",
                         "ddaate": "2023-02-02",
@@ -7272,8 +7285,8 @@
                         "score": 14.0,
                         "totalp": 15.0
                     },
-                    "Classwork,HomeworkAvaliable": 150.0,
-                    "Classwork,HomeworkScore": 150.0,
+                    "Classwork,HomeworkAvaliable": 160.0,
+                    "Classwork,HomeworkScore": 159.0,
                     "Mastery AssessmentsAvaliable": 35.0,
                     "Mastery AssessmentsScore": 33.0,
                     "Progress AssessmentsAvaliable": 14.0,
@@ -7324,6 +7337,19 @@
                     },
                     "11": {
                         "absent": false,
+                        "category": "Progress Assessments",
+                        "ddaate": "2023-03-01",
+                        "exempt": false,
+                        "ingrade": true,
+                        "late": false,
+                        "missing": false,
+                        "modified": "2023-03-06 12:02:26",
+                        "name": "Quiz 2 - Percent comp/empirical & molec. formula",
+                        "score": 10.0,
+                        "totalp": 10.0
+                    },
+                    "12": {
+                        "absent": false,
                         "category": "Classwork,Homework",
                         "ddaate": "2023-01-25",
                         "exempt": false,
@@ -7335,7 +7361,7 @@
                         "score": 10.0,
                         "totalp": 10.0
                     },
-                    "12": {
+                    "13": {
                         "absent": false,
                         "category": "Classwork,Homework",
                         "ddaate": "2023-01-11",
@@ -7348,7 +7374,7 @@
                         "score": 10.0,
                         "totalp": 10.0
                     },
-                    "13": {
+                    "14": {
                         "absent": false,
                         "category": "Classwork,Homework",
                         "ddaate": "2023-02-16",
@@ -7361,7 +7387,7 @@
                         "score": "Exempt",
                         "totalp": 10.0
                     },
-                    "14": {
+                    "15": {
                         "absent": false,
                         "category": "Classwork,Homework",
                         "ddaate": "2023-01-17",
@@ -7374,7 +7400,7 @@
                         "score": 10.0,
                         "totalp": 10.0
                     },
-                    "15": {
+                    "16": {
                         "absent": false,
                         "category": "Classwork,Homework",
                         "ddaate": "2023-01-05",
@@ -7387,7 +7413,7 @@
                         "score": 10.0,
                         "totalp": 10.0
                     },
-                    "16": {
+                    "17": {
                         "absent": false,
                         "category": "Progress Assessments",
                         "ddaate": "2023-01-19",
@@ -7400,7 +7426,7 @@
                         "score": 16.0,
                         "totalp": 16.0
                     },
-                    "17": {
+                    "18": {
                         "absent": false,
                         "category": "Classwork,Homework",
                         "ddaate": "2023-01-25",
@@ -7413,7 +7439,7 @@
                         "score": 15.0,
                         "totalp": 15.0
                     },
-                    "18": {
+                    "19": {
                         "absent": false,
                         "category": "Mastery Assessments",
                         "ddaate": "2023-02-08",
@@ -7425,19 +7451,6 @@
                         "name": "Unit 5 Test",
                         "score": 40.0,
                         "totalp": 40.0
-                    },
-                    "19": {
-                        "absent": false,
-                        "category": "Lab Investigations",
-                        "ddaate": "2023-02-02",
-                        "exempt": false,
-                        "ingrade": true,
-                        "late": false,
-                        "missing": false,
-                        "modified": "2023-02-13 20:11:59",
-                        "name": "Precipitate and Solubility Lab",
-                        "score": 20.0,
-                        "totalp": 20.0
                     },
                     "2": {
                         "absent": false,
@@ -7455,6 +7468,19 @@
                     "20": {
                         "absent": false,
                         "category": "Lab Investigations",
+                        "ddaate": "2023-02-02",
+                        "exempt": false,
+                        "ingrade": true,
+                        "late": false,
+                        "missing": false,
+                        "modified": "2023-02-13 20:11:59",
+                        "name": "Precipitate and Solubility Lab",
+                        "score": 20.0,
+                        "totalp": 20.0
+                    },
+                    "21": {
+                        "absent": false,
+                        "category": "Lab Investigations",
                         "ddaate": "2023-01-10",
                         "exempt": false,
                         "ingrade": true,
@@ -7465,7 +7491,7 @@
                         "score": 20.0,
                         "totalp": 20.0
                     },
-                    "21": {
+                    "22": {
                         "absent": false,
                         "category": "Lab Investigations",
                         "ddaate": "2023-02-14",
@@ -7575,8 +7601,8 @@
                     "Lab InvestigationsScore": 60.0,
                     "Mastery AssessmentsAvaliable": 40.0,
                     "Mastery AssessmentsScore": 40.0,
-                    "Progress AssessmentsAvaliable": 46.0,
-                    "Progress AssessmentsScore": 41.0,
+                    "Progress AssessmentsAvaliable": 56.0,
+                    "Progress AssessmentsScore": 51.0,
                     "categories": [
                         "Classwork,Homework",
                         "Lab Investigations",
@@ -8567,6 +8593,19 @@
                         "totalp": 21.0
                     },
                     "17": {
+                        "absent": "n/e",
+                        "category": "Classwork,Homework",
+                        "ddaate": "2023-02-08",
+                        "exempt": "n/e",
+                        "ingrade": true,
+                        "late": "n/e",
+                        "missing": "n/e",
+                        "modified": "n/e",
+                        "name": "Review Group Activity 10.5",
+                        "score": "n/e",
+                        "totalp": 9.0
+                    },
+                    "18": {
                         "absent": false,
                         "category": "Mastery Assessments",
                         "ddaate": "2023-01-26",
@@ -8579,7 +8618,7 @@
                         "score": 2.0,
                         "totalp": 0.0
                     },
-                    "18": {
+                    "19": {
                         "absent": false,
                         "category": "Homework Passes",
                         "ddaate": "2023-05-30",
@@ -8591,19 +8630,6 @@
                         "name": "HW passes remaining S2",
                         "score": 3.0,
                         "totalp": 3.0
-                    },
-                    "19": {
-                        "absent": false,
-                        "category": "Classwork,Homework",
-                        "ddaate": "2023-01-26",
-                        "exempt": false,
-                        "ingrade": true,
-                        "late": false,
-                        "missing": false,
-                        "modified": "2023-02-07 12:49:37",
-                        "name": "WA 10.1",
-                        "score": 10.0,
-                        "totalp": 10.0
                     },
                     "2": {
                         "absent": false,
@@ -8621,6 +8647,32 @@
                     "20": {
                         "absent": false,
                         "category": "Classwork,Homework",
+                        "ddaate": "2023-02-17",
+                        "exempt": false,
+                        "ingrade": true,
+                        "late": false,
+                        "missing": false,
+                        "modified": "2023-03-05 13:30:22",
+                        "name": "Review WS 10.5-8",
+                        "score": 9.0,
+                        "totalp": 9.0
+                    },
+                    "21": {
+                        "absent": false,
+                        "category": "Classwork,Homework",
+                        "ddaate": "2023-01-26",
+                        "exempt": false,
+                        "ingrade": true,
+                        "late": false,
+                        "missing": false,
+                        "modified": "2023-02-07 12:49:37",
+                        "name": "WA 10.1",
+                        "score": 10.0,
+                        "totalp": 10.0
+                    },
+                    "22": {
+                        "absent": false,
+                        "category": "Classwork,Homework",
                         "ddaate": "2023-02-13",
                         "exempt": false,
                         "ingrade": true,
@@ -8631,7 +8683,20 @@
                         "score": 10.0,
                         "totalp": 10.0
                     },
-                    "21": {
+                    "23": {
+                        "absent": "n/e",
+                        "category": "Classwork,Homework",
+                        "ddaate": "2023-02-01",
+                        "exempt": "n/e",
+                        "ingrade": true,
+                        "late": "n/e",
+                        "missing": "n/e",
+                        "modified": "n/e",
+                        "name": "Review WS 10.1-4",
+                        "score": "n/e",
+                        "totalp": 8.0
+                    },
+                    "24": {
                         "absent": false,
                         "category": "Progress Assessments",
                         "ddaate": "2023-01-13",
@@ -8644,7 +8709,7 @@
                         "score": 20.0,
                         "totalp": 20.0
                     },
-                    "22": {
+                    "25": {
                         "absent": false,
                         "category": "Classwork,Homework",
                         "ddaate": "2023-01-27",
@@ -8657,7 +8722,7 @@
                         "score": 10.0,
                         "totalp": 10.0
                     },
-                    "23": {
+                    "26": {
                         "absent": "n/e",
                         "category": "Classwork,Homework",
                         "ddaate": "2023-02-07",
@@ -8761,8 +8826,8 @@
                         "score": 10.0,
                         "totalp": 10.0
                     },
-                    "Classwork,HomeworkAvaliable": 156.0,
-                    "Classwork,HomeworkScore": 155.9,
+                    "Classwork,HomeworkAvaliable": 165.0,
+                    "Classwork,HomeworkScore": 164.9,
                     "Homework PassesAvaliable": 0,
                     "Homework PassesScore": 0,
                     "Mastery AssessmentsAvaliable": 137.1,

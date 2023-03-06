@@ -14,7 +14,8 @@ export default function Sems(grades) {
       </TabList>
 
       <TabPanels>
-                <TabPanel>
+          <TabPanel>
+            
                     <ClassList grades={grades.grades}   path={["classes","s1"]}  />
         </TabPanel>
                 <TabPanel>

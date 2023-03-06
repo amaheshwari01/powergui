@@ -9,21 +9,25 @@ import Nav from './Nav';
 import Sems from './Sems';
 function App() {
   const [grades, setGrades] = useState();
+    // const json;
+  
 
   useEffect(() => {
-    // console.log(gg)
-    setGrades(gg)
-    // POST request using fetch inside useEffect React hook
-    // fetch('https://powerscraper-hxj7vhwn5a-wl.a.run.app/', {
-    // method: 'POST',
-    
-    // body: new URLSearchParams({
-    //     'act': 'a.maheshwari',
-    //     'pw': '',
-    //     'req': 'grades'
-    // })
-    // }).then((response) => response.json()).then((data) => setGrades(data));
-    
+
+    const formData = new FormData();
+
+formData.append('act', '');
+formData.append('pw', '');
+formData.append('req', 'grades');
+
+fetch('http://127.0.0.1:5000/', {
+    method: 'POST',
+    body: formData
+})
+.then(response => {
+      console.log('Response:', response)
+      return response.json();
+}).then(response => setGrades(response))
   }, []);
   // const updateGrades = (newGrades) => {
   //   setGrades(newGrades);
@@ -31,6 +35,12 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Nav />
+      {/* {grades && console.log("gg", (gg.classes))} */}
+      {console.log("gr", (grades))}
+      
+       {/* {grades && console.log("grades",(JSON.stringify(grades.classes)===JSON.stringify(gg.classes)))} */}
+
+      {/* {console.log("gg",gg)} */}
       {grades && <Sems grades={grades} />}
     </ChakraProvider>
   );
