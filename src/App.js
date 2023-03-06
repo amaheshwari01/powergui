@@ -1,8 +1,12 @@
-import './App.css';
-import Sems from './Sems';
-import Nav from './Nav';
-import { useEffect, useState } from 'react';
+import {useEffect,useState} from 'react';
 import gg from './testingData/grades.json';
+
+import {
+  ChakraProvider,
+  theme,
+} from '@chakra-ui/react';
+import Nav from './Nav';
+import Sems from './Sems';
 function App() {
   const [grades, setGrades] = useState();
 
@@ -21,14 +25,14 @@ function App() {
     // }).then((response) => response.json()).then((data) => setGrades(data));
     
   }, []);
+  // const updateGrades = (newGrades) => {
+  //   setGrades(newGrades);
+  // };
   return (
-    <div className="App">
-          <Nav />
-      {grades && <Sems grades={grades.classes} />}
-        
-     
-      {!grades && 'Loading...'}
-    </div>
+    <ChakraProvider theme={theme}>
+      <Nav />
+      {grades && <Sems grades={grades} />}
+    </ChakraProvider>
   );
 }
 

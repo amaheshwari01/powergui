@@ -1,38 +1,27 @@
 import {
-  Tabs,
-  TabsHeader,
-  TabsBody,
-  Tab,
-  TabPanel,
-} from "@material-tailwind/react";
+  
+Tabs, TabList, TabPanels, Tab, TabPanel ,
+} from '@chakra-ui/react';
 import ClassList from './ClassList';
+export default function Sems(grades) { 
 
- 
-export default function Sems(grades) {
- 
- 
-return (
- 
-    <Tabs value="html" >
-        <div className="flex flex-col w-80 pl-5 gap-6">
-  <TabsHeader>
-    <Tab key={"s1"} value={"s1"}>
-        Semester 1
-                </Tab>
-                <Tab key={"s2"} value={"s2"}>
-        Semester 2
-      </Tab>
-            </TabsHeader>
-            </div>
-  <TabsBody>
-      <TabPanel key={"s1"} value={"s1"}>
-        <ClassList Semester={grades.grades.s1} />
-      </TabPanel>
-    <TabPanel key={"s2"} value={"s2"}>
-        <ClassList  Semester={grades.grades.s2} />
-    </TabPanel>
-    
-  </TabsBody>
-</Tabs>
-); }
- 
+    return (
+        
+      <Tabs pt={2} variant='enclosed'>
+      <TabList>
+        <Tab>Semester 1</Tab>
+        <Tab>Semester 2</Tab>
+      </TabList>
+
+      <TabPanels>
+                <TabPanel>
+                    <ClassList grades={grades.grades}   path={["classes","s1"]}  />
+        </TabPanel>
+                <TabPanel>
+                    <ClassList grades={grades.grades}  path={["classes","s2"]}/>
+        </TabPanel>
+       
+      </TabPanels>
+    </Tabs>
+    )
+}

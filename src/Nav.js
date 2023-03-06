@@ -1,85 +1,33 @@
-
-
-// import { useState, useEffect } from "react";
 import {
-  Navbar,
-  Typography,
+  Box,
+  Flex,
   Button,
-} from "@material-tailwind/react";
- 
+
+  useColorModeValue,
+  Stack,
+  useColorMode,
+} from '@chakra-ui/react';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+
+
 export default function Nav() {
-  // const [openNav, setOpenNav] = useState(false);
- 
-  // // useEffect(() => {
-  // //   window.addEventListener(
-  // //     "resize",
-  // //     () => window.innerWidth >= 960 && setOpenNav(false)
-  // //   );
-  // // }, []);
- 
-  // const navList = (
-  //   <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-  //     <Typography
-  //       as="li"
-  //       variant="small"
-  //       color="blue-gray"
-  //       className="p-1 font-normal"
-  //     >
-  //       <button className="flex items-center">
-  //         Pages
-  //       </button>
-  //     </Typography>
-  //     <Typography
-  //       as="li"
-  //       variant="small"
-  //       color="blue-gray"
-  //       className="p-1 font-normal"
-  //     >
-  //       <button className="flex items-center">
-  //         Account
-  //       </button>
-  //     </Typography>
-  //     <Typography
-  //       as="li"
-  //       variant="small"
-  //       color="blue-gray"
-  //       className="p-1 font-normal"
-  //     >
-  //       <button className="flex items-center">
-  //         Blocks
-  //       </button>
-  //     </Typography>
-  //     <Typography
-  //       as="li"
-  //       variant="small"
-  //       color="blue-gray"
-  //       className="p-1 font-normal"
-  //     >
-  //       <button className="flex items-center">
-  //         Docs
-  //       </button>
-  //     </Typography>
-  //   </ul>
-  // );
- 
+  const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Navbar className="mx-auto  !w-full lg:px-8 lg:py-4 bg-blue-500">
-      <div className="container mx-auto w-full flex items-center justify-between text-blue-gray-900">
-        <Typography
-          as="a"
-          href="/"
-          variant="small"
-          className="mr-4 cursor-pointer py-1.5 font-normal"
-        >
-          <span>POWERSCRAPER</span>
-        </Typography>
-        {/* <div className="hidden lg:block">{navList}</div> */}
-        <Button variant="gradient" size="sm" >
-          <span>Sign In</span>
-        </Button>
-     
-      </div>
- 
-    </Navbar>
+    <>
+      <Box boxShadow='md' bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+          <Box>POWERSCRAPER</Box>
+
+          <Flex alignItems={'center'}>
+            <Stack direction={'row'} spacing={7}>
+              <Button onClick={toggleColorMode}>
+                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+              </Button>
+
+            </Stack>
+          </Flex>
+        </Flex>
+      </Box>
+    </>
   );
 }
