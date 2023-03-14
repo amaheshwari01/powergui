@@ -1,0 +1,75 @@
+{
+    "AP Human Geography": {
+        "Classwork/Homework": 0.25,
+        "Progress Assessments": 0.2,
+        "Final Exam": 0.2,
+        "Mastery Assessments": 0.35
+    },
+    "AP Physics C: Mechanics": {
+        "Classwork/Homework": 0.15,
+        "Progress Assessments": 0.15,
+        "Mastery Assessments": 0.35,
+        "Labs & Projects": 0.2,
+        "Final Exam": 0.15
+    },
+    "Latin II": {
+        "Progress Assessments": 0.2,
+        "Classwork/Homework": 0.2,
+        "Mastery Assessments": 0.45,
+        "Final Exam": 0.15
+    },
+    "AP Calculus BC": {
+        "Progress Assessments": 0.1,
+        "Classwork/Homework": 0.2,
+        "Mastery Assessments": 0.5,
+        "Final Exam": 0.2
+    },
+    "AP Statistics": {
+        "Progress Assessments": 0.1,
+        "Mastery Assessments": 0.45,
+        "Classwork/Homework": 0.25,
+        "Final Exam": 0.2
+    },
+    "AP Computer Science A (CodeHS)": {
+        "Classwork/Homework": 0.35,
+        "Major Assignments": 0.2,
+        "Mastery Assessments": 0.3
+    },
+    "New Testament Studies": {
+        "Classwork/Homework": 0.3,
+        "Progress Assessment": 0.2,
+        "Mastery Assessments": 0.35,
+        "Community Service": 0.15
+    },
+    "English 10 (H)": {
+        "Classwork/Homework": 0.2,
+        "Progress Assessments": 0.25,
+        "Mastery Assessments": 0.4
+    },
+    "Chemistry (H)": {
+        "Progress Assessments": 0.15,
+        "Classwork/Homework": 0.1,
+        "Mastery Assessments": 0.4,
+        "Lab Investigations": 0.15,
+        "Final Exam": 0.2
+    },
+    "Principles of Engineering": {
+        "Classwork/Homework": 1,
+        "Major Assignments": 12,
+        "Mastery Assessments": 1,
+        "Class Participation": 1
+    },
+    "AP Biology": {
+        "Classwork/Homework": 0.15,
+        "Lab Investigations": 0.3,
+        "Mastery Assessments": 0.45
+    },
+    "Trig/Pre-Calculus BC (H)": {
+        "ALEKS": 0,
+        "Classwork/Homework": 0.2,
+        "Progress Assessments": 0.1,
+        "Mastery Assessments": 0.5,
+        "Final Exam": 0.2,
+        "Homework Passes": 0
+    }
+}
