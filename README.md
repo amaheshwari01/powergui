@@ -1,3 +1,4 @@
-#POWERGUI
-An interface for my previous POWERSCRAPER which scrapes powerschool and returns your grades( I couldnt think of any better names)
 
+## POWERGUI
+
+An interface that allows you to calculate your grades based on pwerscraper(I CANT THINK OF A BETTER NAME)
