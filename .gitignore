@@ -22,5 +22,4 @@ src/testingData
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-src/testingData/grades.json
-src/testingData/grades.json
+# src/testingData/grades.json

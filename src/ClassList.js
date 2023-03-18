@@ -5,11 +5,11 @@ import {
   AccordionButton,
   AccordionPanel,
   Box,
-  Flex, Spacer,
+  // Flex, Spacer,
     
 } from '@chakra-ui/react'
 import Cats from './Cats';
-export default function ClassList({ grades, path }) {
+export default function ClassList({ grades, path ,setGrades}) {
   const [clas, setClasses] = useState([]);
   const [curclass, setcl] = useState(-1);
 
@@ -35,7 +35,7 @@ export default function ClassList({ grades, path }) {
 
   }, [grades,path]);
     return (
-        <Accordion allowToggle onChange={(i) => setcl(i)}>
+        <Accordion allowToggle onChange={(i) => setcl(i)} >
 {clas.map((c,index) => 
           
   <AccordionItem key={c.class}>
@@ -60,7 +60,7 @@ export default function ClassList({ grades, path }) {
     </h2>
     <AccordionPanel pb={4}>
       {index === curclass &&
-        <Cats grades={grades} path={c.pth} />
+        <Cats grades={grades} path={c.pth} setGrades={setGrades} />
       }
     </AccordionPanel>
        

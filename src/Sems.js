@@ -1,14 +1,14 @@
 import {
   
-Tabs, TabList, TabPanels, Tab, TabPanel ,Button
+Tabs, TabList, TabPanels, Tab, TabPanel
 } from '@chakra-ui/react';
 import ClassList from './ClassList';
 import { useState } from 'react';
-export default function Sems(grades ) { 
+export default function Sems({grades, setGrades}) { 
   const [sem, setSem] = useState(1);
   // console.log(hi)
-    return (
 
+    return (
       <Tabs pt={2} variant='enclosed' defaultIndex={1} onChange={(index) => setSem(index)}>
 
       <TabList>
@@ -18,14 +18,16 @@ export default function Sems(grades ) {
 
       <TabPanels>
           <TabPanel>
-              {sem===0&&
-              < ClassList grades={grades.grades}   path={["classes", "s1"]}  />
+            {sem === 0 &&
+              // "hi"
+              // JSON.stringify(grades)
+              < ClassList grades={grades}  setGrades={setGrades} path={["classes", "s1"]}  />
               }
         </TabPanel>
           <TabPanel>
                           {sem===1&&
-
-              < ClassList grades={grades.grades}  path={["classes", "s2"]}/>
+                            
+              < ClassList grades={grades} setGrades={setGrades} path={["classes", "s2"]}/>
                           }
         </TabPanel>
        

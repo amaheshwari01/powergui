@@ -2,7 +2,7 @@ import {useEffect,useState,useCallback} from 'react';
 import gg from './testingData/grades.json';
 import w from './weights.json';
 import {
-  Button,
+  // Button,
   ChakraProvider,
   theme,
 } from '@chakra-ui/react';
@@ -33,17 +33,54 @@ function App() {
           const caty = value.GrList.categories;
           let gr = 0
           let wcount = 0;
+         
           // console.log(caty);
           for (let i = 0; i < caty.length; i++) {
-            if (value.GrList[caty[i] + "Avaliable"] > 0) { 
-              // console.log(w[value.class][caty[i]],caty[i],value.GrList[caty[i] + "Score"]/value.GrList[caty[i]+"Avaliable"])
-            wcount += w[value.class][caty[i]];
-            gr += w[value.class][caty[i]] * (value.GrList[caty[i] + "Score"] / value.GrList[caty[i] + "Avaliable"])
-          }
+            if (!w?.[value.class]?.[caty[i]] && value.GrList[caty[i] + "Avaliable"] > 0) {
+              alert("No weight for " + value.class + " " + caty[i]);
+            }
+            else {
+              if (value.GrList[caty[i] + "Avaliable"] > 0) {
+                // console.log(w[value.class][caty[i]],caty[i],value.GrList[caty[i] + "Score"]/value.GrList[caty[i]+"Avaliable"])
+                wcount += w[value.class][caty[i]];
+                gr += w[value.class][caty[i]] * (value.GrList[caty[i] + "Score"] / value.GrList[caty[i] + "Avaliable"])
+              }
+            }
         }
           gr = gr / wcount;
-          gr=(gr * 100).toFixed(3)
-          grCopy.classes.s2[key].grade = gr.toString();
+          gr = (gr * 100).toFixed(3)
+          if (gr) {
+            grCopy.classes.s2[key].grade = gr.toString();
+          }
+        console.log(value.class,gr)
+          
+      }
+      }
+
+      for (const [, [key, value]] of Object.entries(Object.entries(grCopy.classes.s1))) {
+        if (value.teacher !== "n/a" ) {
+          const caty = value.GrList.categories;
+          let gr = 0
+          let wcount = 0;
+         
+          // console.log(caty);
+          for (let i = 0; i < caty.length; i++) {
+            if (!w?.[value.class]?.[caty[i]] && value.GrList[caty[i] + "Avaliable"] > 0) {
+              alert("No weight for " + value.class + " " + caty[i]);
+            }
+            else {
+              if (value.GrList[caty[i] + "Avaliable"] > 0) {
+                // console.log(w[value.class][caty[i]],caty[i],value.GrList[caty[i] + "Score"]/value.GrList[caty[i]+"Avaliable"])
+                wcount += w[value.class][caty[i]];
+                gr += w[value.class][caty[i]] * (value.GrList[caty[i] + "Score"] / value.GrList[caty[i] + "Avaliable"])
+              }
+            }
+        }
+          gr = gr / wcount;
+          gr = (gr * 100).toFixed(3)
+          if (gr) {
+            grCopy.classes.s1[key].grade = gr.toString();
+          }
         console.log(value.class,gr)
           
       }
@@ -77,9 +114,9 @@ function App() {
     
   }, [updx]);
   // console.log(upgrades)
-  const updateGrades = () => {
-    updx(grades);
-    }
+  // const updateGrades = () => {
+  //   updx(grades);
+  //   }
   return (
     <ChakraProvider theme={theme}>
       <Nav />
@@ -90,7 +127,7 @@ function App() {
        {/* {grades && console.log("grades",(JSON.stringify(grades.classes)===JSON.stringify(gg.classes)))} */}
 
       {/* {console.log("gg",gg)} */}
-      {grades && <Sems grades={grades} />}
+      {grades && <Sems grades={grades} setGrades={setGrades} />}
     </ChakraProvider>
   );
 }

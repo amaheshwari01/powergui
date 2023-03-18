@@ -5,11 +5,11 @@ import {
   AccordionPanel,
     Box,
 } from '@chakra-ui/react'
-import Assignment from './Assignment';
+import AssignmentList from './AssignmentList';
 import{useState} from 'react';
-export default function ClassList({ grades, path }) {
+export default function ClassList({ grades, path, setGrades}) {
   const cats = grades[path[0]][path[1]][path[2]].GrList.categories;
-  const [cl,setcl] = useState(-1);
+  const [,setcl] = useState(-1);
   return (
   <>
       {/* // <p>{JSON.stringify(cats)}</p>
@@ -33,8 +33,7 @@ export default function ClassList({ grades, path }) {
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-      {/* {index === cl && */}
-        <Assignment grades={grades} path={[...path, c]} />
+        <AssignmentList grades={grades} setGrades={setGrades} path={[...path, c]} />
       {/* } */}
         </AccordionPanel>
       {/* </>
